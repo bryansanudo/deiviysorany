@@ -10,7 +10,7 @@ const HeroSection = () => {
 
   return (
     <div
-      name="inicio"
+      name="invitacion"
       className="flex items-end justify-center   w-full h-screen text-center  "
     >
       <img

@@ -5,7 +5,7 @@ import invitacionVideo from '@/assets/invitacion.mp4'
 const Services = () => {
   return (
     <PageSection
-      name="invitacion"
+      
       
       
     >

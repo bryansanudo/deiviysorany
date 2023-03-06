@@ -100,7 +100,7 @@ const History = () => {
                       <div className="mb-6 hover:scale-110 duration-300">
                     <a href={code}>
 
-                    <FaCameraRetro size={30}  />
+                    <FaCameraRetro size={30} fill={"black"}  />
                     </a>
                       </div>
                   </div>

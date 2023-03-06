@@ -8,10 +8,7 @@ import logoBoda from "@/assets/logoBoda.jpg";
 const Navbar = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const links = [
-    {
-      id: 1,
-      link: "inicio",
-    },
+    
     {
       id: 2,
       link: "invitacion",
@@ -27,6 +24,10 @@ const Navbar = () => {
     {
       id: 5,
       link: "nuestra historia",
+    },
+    {
+      id: 6,
+      link: "ceremonia",
     },
   ];
 
