@@ -1,5 +1,5 @@
 import React from "react";
-import PageSection from "@/components/PageSection";
+
 
 import iglesia from '@/assets/itinerario/iglesia.jpg'
 import fotos from '@/assets/itinerario/fotos.jpg'

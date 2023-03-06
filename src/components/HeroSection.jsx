@@ -1,22 +1,12 @@
-import React, { useRef, useState } from "react";
-import { FaPauseCircle, FaPlayCircle } from "react-icons/fa";
+import React from "react";
+
 
 import heroImg from "@/assets/heroImage.jpg";
 
-const HeroSection = ({ isMenuShown }) => {
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
+const HeroSection = () => {
+  
 
-  const videoRef = useRef();
-
-  const handleVideoPause = () => {
-    videoRef.current.pause();
-    setIsVideoPlaying(false);
-  };
-
-  const handleVideoPlay = () => {
-    videoRef.current.play();
-    setIsVideoPlaying(true);
-  };
+ 
 
   return (
     <div

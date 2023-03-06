@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebook } from "react-icons/fa";
+
 import PageSection from "@/components/PageSection";
 import contact from "@/assets/contact.jpg";
 import ContactForm from "@/components/ContactForm";

@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -8,11 +8,11 @@ import Contact from "@/components/Contact";
 import History from "@/components/History";
 
 function App() {
-  const [isMenuShown, setIsMenuShown] = useState(false);
+  
   return (
     <>
-      <Navbar isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
-      <HeroSection isMenuShown={isMenuShown} />
+      <Navbar  />
+      <HeroSection  />
       <Services />
       <Contact />
       <Portfolio />
