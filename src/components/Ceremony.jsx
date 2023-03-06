@@ -4,7 +4,7 @@ import React from "react";
 import padresDeivi from '@/assets/fathers/padresDeivi.jpg'
 import padresSorany from '@/assets/fathers/padresSorany.jpg'
 import padrinosSacramento from '@/assets/fathers/padrinosSacramento.jpg'
-import PadrinosArras from '@/assets/fathers/padrinosArras.jpg'
+import padrinosArras from '@/assets/fathers/padrinosArras.jpg'
 import padrinosAnillos from '@/assets/fathers/padrinosAnillos.jpg'
 import padrinosLazo from '@/assets/fathers/padrinosLazo.jpg'
 
@@ -21,7 +21,7 @@ import {  GiDiamondRing } from "react-icons/gi";
 
 
 const ARRAY_IMG = [
-    padresDeivi,padresSorany,padrinosSacramento,PadrinosArras,padrinosAnillos,padrinosLazo
+    padresDeivi,padresSorany,padrinosSacramento,padrinosArras,padrinosAnillos,padrinosLazo
 ]
 
 const Ceremony = () => {
