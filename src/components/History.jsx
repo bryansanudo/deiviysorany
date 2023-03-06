@@ -31,7 +31,7 @@ const History = () => {
       id: 3,
       src: cali,
       title: "Texto Relevante ",
-      
+      code: "",
       hour: "DD/MM/AA",
     },
     {
@@ -79,13 +79,13 @@ const History = () => {
       subtitle={`
       El día que decidimos unir nuestras vidas, lo hicimos con la sincera intención de caminar, reír, llorar y superarlo todo juntos.`}
     >
-      <div className="w-full bg-black text-white">
+      <div className="w-full  text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
           <div className="grid gap-8 md:p-12 grid-cols-1 lg:grid-cols-3">
             {portfolios.map(({ id, src, title, hour,code }) => (
               <div
                 key={id}
-                className="rounded-lg shadow-xl shadow-thSecondary    mx-auto "
+                className="rounded-lg shadow-xl shadow-thPrimary    mx-auto "
               >
                 
                   <div className="flex flex-col items-center justify-center  ">
@@ -93,7 +93,7 @@ const History = () => {
                       src={src}
                       className=" object-cover rounded-t-xl "
                     />
-                    <p className="m-4 capitalize text-sm md:text-lg text-thSecondary">
+                    <p className="m-4 capitalize text-sm md:text-lg text-thPrimary">
                       {title}
                     </p>
                     <p className="m-4 text-sm md:text-lg">{hour}</p>

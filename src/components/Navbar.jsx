@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 
 import logoBoda from "@/assets/logoBoda.jpg";
 
-const Navbar = ({ isMenuShown, setIsMenuShown }) => {
+const Navbar = () => {
+  const [isMenuShown, setIsMenuShown] = useState(false);
   const links = [
     {
       id: 1,

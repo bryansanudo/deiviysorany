@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import History from "@/components/History";
+import Ceremony from "@/components/Ceremony";
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
       <Contact />
       <Portfolio />
       <History />
+      <Ceremony />
     </>
   );
 }
