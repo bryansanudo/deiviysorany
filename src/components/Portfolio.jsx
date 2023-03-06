@@ -41,9 +41,9 @@ const Portfolio = () => {
     <div className="max-w-screen-xl mx-auto h-fit" >
         <div className="my-40 mx-8 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl text-center">Itinerario</h1>
-          <div className="my-8 flex flex-col gap-5 items-center justify-center">Adoramos a los niños, pero creemos que merecen descansar  ¡Niños, dulces sueños! <FaBaby size={40}/> </div>
+          <div className="my-8 flex flex-col gap-5 items-center justify-center font-semibold">Adoramos a los niños, pero creemos que merecen descansar  ¡Niños, dulces sueños! <FaBaby size={40}/> </div>
             
-          <p className="my-8 text-center">( solo adultos)</p>
+          <p className="font-semibold my-8 text-center">( solo adultos)</p>
       
         <div className="flex  justify-center items-center  md:gap-20 gap-4 mx-8">
           

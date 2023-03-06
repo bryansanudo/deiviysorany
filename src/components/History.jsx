@@ -1,64 +1,73 @@
 import React from "react";
 import PageSection from "@/components/PageSection";
 
-import iglesia from '@/assets/itinerario/iglesia.jpg'
-import fotos from '@/assets/itinerario/fotos.jpg'
-import entradaNovios from '@/assets/itinerario/entradaNovios.jpg'
-import cena from '@/assets/itinerario/cena.jpg'
-import vela from '@/assets/itinerario/vela.jpg'
-import fiesta from '@/assets/itinerario/fiesta.jpg'
-import despedida from '@/assets/itinerario/despedida.jpg'
+import armenia from '@/assets/history/armenia.jpg'
+import bolivia from '@/assets/history/bolivia.jpg'
+import cali from '@/assets/history/cali.jpg'
+import cartagena from '@/assets/history/cartagena.jpg'
+import chile from '@/assets/history/chile.jpg'
+import ibague from '@/assets/history/ibague.jpg'
+import panama from '@/assets/history/panama.jpg'
+import peru from '@/assets/history/peru.jpg'
+import {  FaCameraRetro } from "react-icons/fa";
 
 const History = () => {
   const portfolios = [
     {
       id: 1,
-      src: iglesia,
-      title: "Iglesia",
-      
-      hour: "3:00 PM",
+      src: armenia,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     {
       id: 2,
-      src: fotos,
-      title: "Fotos",
-      
-      hour: "4:00 PM",
+      src: bolivia,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     {
       id: 3,
-      src: entradaNovios,
-      title: "Entrada Novios",
+      src: cali,
+      title: "Texto Relevante ",
       
-      hour: "6:00 PM",
+      hour: "DD/MM/AA",
     },
     {
       id: 4,
-      src: cena,
-      title: "cena",
-      
-      hour: "7:30 PM",
+      src: cartagena,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     {
       id: 5,
-      src: vela,
-      title: "Vela",
-      
-      hour: "8:30 PM",
+      src: chile,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     {
       id: 6,
-      src: fiesta,
-      title: "Fiesta",
-      
-      hour: "9:00 PM",
+      src: ibague,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     {
       id: 7,
-      src: despedida,
-      title: "Despedida",
-      
-      hour: "10:30 PM",
+      src: panama,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
+    },
+    {
+      id: 8,
+      src: peru,
+      title: "Texto Relevante",
+      code: "",
+      hour: "DD/MM/AA",
     },
     
   ];
@@ -66,17 +75,17 @@ const History = () => {
   return (
     <PageSection
       name="nuestra historia"
-      title="portafolio"
+      title="Nuestra Historia"
       subtitle={`
-      Me apasiona crear soluciones creativas e innovadoras para mis clientes y hacer que sus proyectos sean únicos y exitosos. En este portafolio, encontrarás una breve selección de mis trabajos.`}
+      El día que decidimos unir nuestras vidas, lo hicimos con la sincera intención de caminar, reír, llorar y superarlo todo juntos.`}
     >
       <div className="w-full bg-black text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
-          <div className="grid gap-8 md:p-12 grid-cols-1 lg:grid-cols-4">
-            {portfolios.map(({ id, src, title, hour }) => (
+          <div className="grid gap-8 md:p-12 grid-cols-1 lg:grid-cols-3">
+            {portfolios.map(({ id, src, title, hour,code }) => (
               <div
                 key={id}
-                className="rounded-lg shadow-xl shadow-thSecondary  w-[200px]  mx-auto "
+                className="rounded-lg shadow-xl shadow-thSecondary    mx-auto "
               >
                 
                   <div className="flex flex-col items-center justify-center  ">
@@ -88,6 +97,12 @@ const History = () => {
                       {title}
                     </p>
                     <p className="m-4 text-sm md:text-lg">{hour}</p>
+                      <div className="mb-6 hover:scale-110 duration-300">
+                    <a href={code}>
+
+                    <FaCameraRetro size={30}  />
+                    </a>
+                      </div>
                   </div>
                 
               </div>
