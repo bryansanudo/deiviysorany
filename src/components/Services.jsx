@@ -13,23 +13,15 @@ const Services = () => {
         
 
         <div className="w-full  flex justify-center">
-          <a
-            href="https://www.instagram.com/p/CogCoiuuub4/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          
             <img
               src={invitacionImg}
               className="rounded-lg shadow-xl shadow-thPrimary  object-cover   "
             />
-          </a>
+          
         </div>
         <div className="w-full  flex justify-center">
-          <a
-            href="https://www.instagram.com/p/CogCoiuuub4/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          
             <video
               src={invitacionVideo}
               loop
@@ -39,7 +31,7 @@ const Services = () => {
               playsInline
               className="rounded-lg shadow-xl shadow-thPrimary object-cover w-[350px] md:h-[589px]"
             ></video>
-          </a>
+          
         </div>
       </div>
     </PageSection>
