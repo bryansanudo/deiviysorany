@@ -8,7 +8,16 @@ import cena from '@/assets/itinerario/cena.jpg'
 import vela from '@/assets/itinerario/vela.jpg'
 import fiesta from '@/assets/itinerario/fiesta.jpg'
 import despedida from '@/assets/itinerario/despedida.jpg'
-import FuncionSlide from '@/components/slide/FuncionSlide'
+
+
+
+import { useState } from "react";
+
+
+
+import {  GrLinkPrevious,GrLinkNext } from "react-icons/gr";
+import {  FaBaby } from "react-icons/fa";
+
 
 
 const ARRAY_IMG = [
@@ -16,93 +25,54 @@ const ARRAY_IMG = [
 ]
 
 const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 1,
-      src: iglesia,
-      title: "Iglesia",
-      
-      hour: "3:00 PM",
-    },
-    {
-      id: 2,
-      src: fotos,
-      title: "Fotos",
-      
-      hour: "4:00 PM",
-    },
-    {
-      id: 3,
-      src: entradaNovios,
-      title: "Entrada Novios",
-      
-      hour: "6:00 PM",
-    },
-    {
-      id: 4,
-      src: cena,
-      title: "cena",
-      
-      hour: "7:30 PM",
-    },
-    {
-      id: 5,
-      src: vela,
-      title: "Vela",
-      
-      hour: "8:30 PM",
-    },
-    {
-      id: 6,
-      src: fiesta,
-      title: "Fiesta",
-      
-      hour: "9:00 PM",
-    },
-    {
-      id: 7,
-      src: despedida,
-      title: "Despedida",
-      
-      hour: "10:30 PM",
-    },
-    
-  ];
+  const [index, setIndex] = useState(0);
+    const handleClickNext = () => {
+        index === ARRAY_IMG.length - 1 ? setIndex(0) : setIndex(index + 1);
+    };
+    const handleClickPrev = () => {
+        index === 0 ? setIndex(ARRAY_IMG.length - 1) : setIndex(index - 1);
+    };
 
   return (
-    <PageSection
-      name="itinerario"
-      title="Itinerario"
-      subtitle={`
-      Me apasiona crear soluciones creativas e innovadoras para mis clientes y hacer que sus proyectos sean únicos y exitosos. En este portafolio, encontrarás una breve selección de mis trabajos.`}
-    >
-      <div className="w-full  ">
-        <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
-          <div className="grid gap-8 md:p-12 grid-cols-1 lg:grid-cols-4">
-            {/* {portfolios.map(({ id, src, title, hour }) => (
-              <div
-                key={id}
-                className="rounded-lg shadow-xl shadow-thPrimary w-[200px]  mx-auto "
-              >
+    <>
+    <h1 className="text-black" name="itinerario">
+        .
+      </h1>
+    <div className="max-w-screen-xl mx-auto h-fit" >
+        <div className="my-40 mx-8 text-center lg:text-left">
+          <h1 className="text-4xl lg:text-5xl text-center">Itinerario</h1>
+          <div className="my-8 flex flex-col gap-5 items-center justify-center">Adoramos a los niños, pero creemos que merecen descansar  ¡Niños, dulces sueños! <FaBaby size={40}/> </div>
+            
+          <p className="my-8 text-center">( solo adultos)</p>
+      
+        <div className="flex  justify-center items-center  md:gap-20 gap-4 mx-8">
+          
+            
+           
+            <button className="flex  items-center justify-center  " onClick={handleClickPrev}>
+                    <GrLinkPrevious size={40} />
+                </button>
+            <img
+                src={ARRAY_IMG[index]}
+               /*  className="aspect-[16/13] w-full object-cover md:aspect-[16/18] md:cursor-pointer rounded-md  2xl:max-h-[500px]" */
+                className="rounded-lg shadow-xl shadow-thPrimary  object-cover "
+            />
+            
                 
-                  <div className="flex flex-col items-center justify-center  ">
-                    <img
-                      src={src}
-                      className=" object-cover rounded-t-xl "
-                    />
-                    <p className="m-4 capitalize text-sm md:text-lg font-semibold ">
-                      {title}
-                    </p>
-                    <p className="m-4 text-sm md:text-lg font-semibold">{hour}</p>
-                  </div>
-                
-              </div>
-            ))} */}
-            <FuncionSlide ARRAY_IMG={ARRAY_IMG} />
-          </div>
+                <button
+                    className=" flex  items-center justify-center"
+                    onClick={handleClickNext}
+                >
+                    <GrLinkNext size={40} />
+                </button>
+           
+           
+          
         </div>
-      </div>
-    </PageSection>
+        </div>
+      
+        </div>
+        </>
   );
 };
 
