@@ -8,6 +8,12 @@ import cena from '@/assets/itinerario/cena.jpg'
 import vela from '@/assets/itinerario/vela.jpg'
 import fiesta from '@/assets/itinerario/fiesta.jpg'
 import despedida from '@/assets/itinerario/despedida.jpg'
+import FuncionSlide from '@/components/slide/FuncionSlide'
+
+
+const ARRAY_IMG = [
+  iglesia,fotos,entradaNovios,cena,vela,fiesta,despedida
+]
 
 const Portfolio = () => {
   const portfolios = [
@@ -73,7 +79,7 @@ const Portfolio = () => {
       <div className="w-full  ">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
           <div className="grid gap-8 md:p-12 grid-cols-1 lg:grid-cols-4">
-            {portfolios.map(({ id, src, title, hour }) => (
+            {/* {portfolios.map(({ id, src, title, hour }) => (
               <div
                 key={id}
                 className="rounded-lg shadow-xl shadow-thPrimary w-[200px]  mx-auto "
@@ -91,7 +97,8 @@ const Portfolio = () => {
                   </div>
                 
               </div>
-            ))}
+            ))} */}
+            <FuncionSlide ARRAY_IMG={ARRAY_IMG} />
           </div>
         </div>
       </div>
