@@ -41,7 +41,7 @@ const Ceremony = () => {
     <div className="max-w-screen-xl mx-auto h-fit" >
         <div className="my-40 mx-8 text-center lg:text-left">
           <h1 className="text-4xl lg:text-5xl text-center">Ceremonia</h1>
-          <div className="my-8 flex flex-col gap-5 items-center justify-center font-semibold">¡Nos Casamos! Con nuestro amor, la bendición de dios y la de nuestros padres. <GiDiamondRing size={40}/> </div>
+          <div className="my-8 flex flex-col gap-5 items-center justify-center font-semibold">¡Nos Casamos! Con nuestro amor, la bendición de dios y la de nuestros padres <GiDiamondRing size={40}/> </div>
             
         
       
