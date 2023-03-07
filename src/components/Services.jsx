@@ -1,5 +1,5 @@
 import React from "react";
-import invitacionImg from "@/assets/invitacion.jpg";
+import invitacionImg from "@/assets/invitacion.svg";
 import PageSection from "@/components/PageSection";
 import invitacionVideo from '@/assets/invitacion.mp4'
 const Services = () => {
